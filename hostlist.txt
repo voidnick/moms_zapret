@@ -1,0 +1,14 @@
+youtu.be
+youtube.com
+google.com
+googleapis.com
+gstatic.com
+ytimg.com
+ggpht.com
+translate.google.com
+rutracker.org
+static.rutracker.cc
+static.cdninstagram.com
+flibusta.is
+medium.com
+torproject.org
