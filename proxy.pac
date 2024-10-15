@@ -7,6 +7,7 @@ function FindProxyForURL(url, host) {
 // twitter (x)
     "twitter.com",
     "x.com",
+    "twimg.com",
 // linkedin
     "linkedin.com",
     "licdn.com",
@@ -24,7 +25,6 @@ function FindProxyForURL(url, host) {
     "gstatic.com",
     "ytimg.com",
     "ggpht.com",
-    "translate.google.com",
 // rutracker
     "rutracker.org",
     "static.rutracker.cc",
@@ -44,6 +44,11 @@ function FindProxyForURL(url, host) {
 
   tor_proxy = "SOCKS5 127.0.0.1:9050";
   zapret_proxy = "SOCKS5 127.0.0.1:1080";
+
+  if (new RegExp(escape_reg_exp("alicdn.com"), 'i').test(host)) {
+    //alert("url: '"+url+"' host: '"+host+"' in 'alicdn.com': DIRECT");
+    return "DIRECT";
+  }
 
   for(var i=0; i<TOR_DOMAINS.length; i++) {
     if (new RegExp(escape_reg_exp(TOR_DOMAINS[i]), 'i').test(host)) {

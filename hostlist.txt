@@ -5,7 +5,6 @@ googleapis.com
 gstatic.com
 ytimg.com
 ggpht.com
-translate.google.com
 rutracker.org
 static.rutracker.cc
 static.cdninstagram.com
